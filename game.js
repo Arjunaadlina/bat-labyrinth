@@ -14,10 +14,13 @@ let batY = canvas.height - spriteHeight - 10;
 const batSpeed = 10;
 
 const walls = [
-    { x: 0, y: canvas.height - 5, width: canvas.width , height: 5 }, //BAWAH SENDIRI NAIK KE ATAS JUN
+    { x: 50, y: canvas.height - 5, width: canvas.width , height: 5 }, //BAWAH SENDIRI NAIK KE ATAS JUN
+    { x: canvas.height-5, y: 0, width: 5 , height: canvas.height-43 }, //KANAN SENDIRI
+    { x: 0, y: 0, width: canvas.width , height: 5 }, //ATAS SENDIRI
+    { x: 0, y: 0, width: 5 , height: canvas.height }, // KIRI SENDIRI
     { x: 370, y: canvas.height -30, width: 5 , height: 30 },
     { x: 75, y: canvas.height -48, width: 5 , height: 48 },
-    { x: 40, y: canvas.height -48, width: 40 , height: 5 },
+    { x: 50, y: canvas.height -48, width: 30 , height: 5 },
     { x: 120, y: canvas.height -48, width: 210 , height: 5 },
     { x: canvas.width -65, y: canvas.height -48, width: 210 , height: 5 },
     { x: 325, y: canvas.height -72, width: 5 , height: 28 },
@@ -25,6 +28,13 @@ const walls = [
     { x: canvas.width -175, y: canvas.height -77, width: 60 , height: 5 },
     { x: 55, y: canvas.height -90, width: 5 , height: 45 },
     { x: 435, y: canvas.height -90, width: 5 , height: 45 },
+    { x: 435, y: canvas.height -200, width: 5 , height: 75 },
+    { x: 435, y: canvas.height -130, width: 75 , height: 5 },
+    { x: canvas.width-5, y: canvas.height -130, width: 5 , height: 85 },
+    { x: 100, y: canvas.height -190, width: 5 , height: 55 },
+    { x: 0, y: canvas.height -135, width: 195 , height: 5 },
+    { x: 250, y: canvas.height -135, width: 135 , height: 5 },
+    { x: 150, y: canvas.height -180, width: 285 , height: 5 },
 ];
 
 let directionX = 0;
